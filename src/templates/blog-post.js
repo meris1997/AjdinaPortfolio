@@ -49,8 +49,8 @@ export default class blogPost extends Component {
                 objectPosition="50% 50%"
               />
             ) : (
-              <div className="no-image"></div>
-            )}
+                <div className="no-image"></div>
+              )}
 
             <div className="details">
               <h1 className="title">{data.title}</h1>
@@ -110,7 +110,6 @@ export const pageQuery = graphql`
     }
     contentfulSiteInformation {
       siteUrl
-      twiteerHandle
     }
   }
 `;

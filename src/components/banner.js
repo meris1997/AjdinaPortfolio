@@ -21,22 +21,7 @@ export default class Banner extends Component {
               })}
             </ul>
             <ul className="social">
-              <li>
-                <a
-                  className="fab fa-facebook-f"
-                  href={data.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                ></a>
-              </li>
-              <li>
-                <a
-                  className="fab fa-twitter"
-                  href={data.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                ></a>
-              </li>
+
               <li>
                 <a
                   className="fab fa-instagram"
@@ -53,14 +38,7 @@ export default class Banner extends Component {
                   rel="noopener noreferrer"
                 ></a>
               </li>
-              <li>
-                <a
-                  className="fab fa-github"
-                  href={data.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                ></a>
-              </li>
+
             </ul>
           </div>
         </div>

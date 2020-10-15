@@ -6,6 +6,7 @@
   "author": "Rohit Gupta <rohitguptab33@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "contentful": "^7.14.7",
     "disqus-react": "^1.0.7",
     "dotenv": "^8.2.0",
     "gatsby": "^2.19.7",
