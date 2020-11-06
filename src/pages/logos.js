@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-export default class PhotosPage extends Component {
+export default class LogosPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -87,8 +87,8 @@ export default class PhotosPage extends Component {
         );
     }
 }
-export const pageQuery = graphql`
-  query PhotosPageQuery {
+export const logosQuery = graphql`
+  query LogosPageQuery {
     contentfulPhotos {
       photos {
         file {
