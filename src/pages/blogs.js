@@ -14,7 +14,7 @@ export default class Blogs extends Component {
       <Layout>
         <SEO
           title="Blogs"
-          keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`, `Blogs`]}
+          keywords={[`Ajdina Sahovic`, `Frontend Developer`, `Developer`, `Blogs`]}
         />
         <div className="site-container blogs-page" id="Blogs">
           <div className="container">
@@ -22,9 +22,8 @@ export default class Blogs extends Component {
               <h1 className="line-heading h2">Blogs</h1>
             </div>
             <ul
-              className={`blogs-list ${
-                data.allContentfulBlogs.edges.length < 5 ? "few-blogs" : ""
-              }`}
+              className={`blogs-list ${data.allContentfulBlogs.edges.length < 5 ? "few-blogs" : ""
+                }`}
             >
               {data.allContentfulBlogs.edges.map((item, index) => {
                 return (
@@ -38,8 +37,8 @@ export default class Blogs extends Component {
                           objectPosition="50% 50%"
                         />
                       ) : (
-                        <div className="no-image"></div>
-                      )}
+                          <div className="no-image"></div>
+                        )}
                       <div className="details">
                         <h3 className="title">{item.node.title}</h3>
                         <span className="date">
