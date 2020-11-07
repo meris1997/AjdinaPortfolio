@@ -28,6 +28,15 @@ module.exports = {
         accessToken: `H_tnbcGIT2NNvWNx9jsL6Xv8cAVyLGyI6U001jRAKUg`,
       }
     },
+    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Merriweather:400,300,300italic,400italic,700,700italic', 'Merriweather+Sans:400,700']
+        },
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
@@ -41,7 +50,8 @@ module.exports = {
         theme_color: `#333`,
         icon: `src/images/fev_icon.png` // This path is relative to the root of the site.
       }
-    }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
+    },
+    // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
     `gatsby-plugin-offline`
   ]
 };

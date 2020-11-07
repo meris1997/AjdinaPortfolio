@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
 
-export default class LogosPage extends Component {
+export default class PosterPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -145,7 +145,7 @@ export default class LogosPage extends Component {
                             </div>
                             <div className="col-lg-4 col-sm-6">
                                 <a className="portfolio-box" href="img/portfolio/fullsize/6.jpg" onClick={this.handlePortfolioClick.bind(this, 8)}>
-                                    <Img fluid={this.props.data.images.edges[3].node.childImageSharp.fluid} />
+                                    <Img fluid={this.props.data.images.edges[2].node.childImageSharp.fluid} />
                                     <div className="portfolio-box-caption p-3">
                                         <div className="project-category text-white-50">
                                             Category
@@ -168,7 +168,7 @@ export default class LogosPage extends Component {
 }
 export const imageData = graphql`
   query {
-    images: allFile(filter: {relativePath: {glob: "portfolio/logos/*.jpg"}}, sort: {fields: name}) {
+    images: allFile(filter: {relativePath: {glob: "portfolio/poster/*.jpg"}}, sort: {fields: name}) {
       edges {
         node {
           childImageSharp {

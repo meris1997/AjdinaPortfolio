@@ -8,6 +8,7 @@ import Footer from "./footer";
 
 import "../css/style.css";
 import "../css/font-awesome.css";
+import "./layout.scss";
 
 if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]');
@@ -29,7 +30,7 @@ const Layout = ({ children, header }) => (
         }
       }
     `}
-    
+
     render={data => (
       <>
         <Header
